@@ -20,7 +20,7 @@ This web page has some functionality pictured in the animated Gif below. You'll 
 
 ![Example](example.gif)
 
-It should completed wholley with vanilla HTML, CSS, and JS. 
+It should completed with only vanilla HTML, CSS, and JS. 
 
 ## Submission Instructions
 
@@ -28,13 +28,13 @@ Zip your solution and submit it to GradeScope.
 
 ## Challenge 1 - HTML
 
-The first challenge is to create the markup. At this stage your project will not look like the example. The goal of this section is write the markup that can later be styled to look like this solution. 
+The first challenge is to create the markup. At this stage your project will not look like the example. The goal of this section is write the HTML markup that can later be styled to look like this solution. 
 
 1. **Create an html** file with the default HTML markup. This should include: 
   1. doctype, html, head, title, and body tags
 2. **Add four sections** to your page. You'll be adding different content and styling each of these sections as described below. 
-3. **Add content** to each of your sections. Refer to the images above for a visual guide to what you need to have. 
-  1. The first section (upper left) should display your name as a heading followed by "FEW Assessment"
+3. **Add content** to each of your sections. Refer to the images above for a visual guide to what you need. 
+  1. The first section (upper left) should display your name as a heading followed by "ACS 1700 Assessment"
   2. This section (upper right) should contain three inputs each with a label. Each input should have a label. The first two inputs should take numbers as input, and the last should input a color. 
 		1. Label: Width, input type: number
 		2. Label: Height, input type: number
@@ -63,9 +63,14 @@ The goal of this section is write JavaScript that will create the functionality 
 
 **Overview:** Changing the values in the inputs in the upper right should display those values in the in the lower left, and change the width, height, and color of the box in the lower right. Watch the animated gif example it shows the features in use live. 
 
-- Use JavaScript to reference DOM elements. This is a general instruction. You'll need to define a variable that referenes each of the inputs and display elements.
+- Use JavaScript to reference DOM elements. This is a general instruction. You'll need to define a variable that referenes each of the inputs and display elements and the other elements like the color box and text elements that display the dynamic values.
 - Use event listeners to display values entered in the form elements in the box in the lower left. See the example above. 
 	- Changing the width in the width input should display the value of the width followed by px in the box in the lower left. The width of the colored box in the lower right should change it's width to match the entered value in px.
 	- Changing the height in the height input should display the value in the lower left. The height of the colored box in the lower right should change it's height to match the value entered in px. 
 	- Changing the color should display the color value in the lower left. The colored box in the lower right should change it's color to match the color chosen. 
 
+## Stretch Goals
+
+- Center the four boxes in the center of the page.
+- Animate the colored box in the lower right so that it animates when the values are updated.
+- Limit the range of values input for height and width from 10 to 180. 
