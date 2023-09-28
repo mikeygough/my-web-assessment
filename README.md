@@ -34,16 +34,17 @@ The first challenge is to create the markup. At this stage your project will not
   1. doctype, html, head, title, and body tags
 2. **Add four sections** to your page. You'll be adding different content and styling each of these sections as described below. 
 3. **Add content** to each of your sections. Refer to the images above for a visual guide to what you need. 
-  1. The first section (upper left) should display your name as a heading followed by "ACS 1700 Assessment"
-  2. This section (upper right) should contain three inputs each with a label. Each input should have a label. The first two inputs should take numbers as input, and the last should input a color. 
-		1. Label: Width, input type: number
-		2. Label: Height, input type: number
-		3. Label: Color, input type: color (type color will show the color picker)
-	3. (Lower left) Should display some fixed headings and some dynamic values that you will add with JavaScript. 
+1. The first section (upper left) should display your name as a heading followed by "ACS 1700 Assessment"
+2. This section (upper right) should contain three inputs each with a label. Each input should have a label. The first two inputs should take numbers as input, and the last should input a color. 
+	1. Label: Width, input type: number
+	2. Label: Height, input type: number
+	3. Label: Color, input type: color (type color will show the color picker)
+3. (Lower left) Should display some fixed headings and some dynamic values that you will add with JavaScript. 
 		1. Title: Width
 		2. Title: Height
 		3. Title: Color 
-	4. The last section (lower right) will display a box. The size and color of the box will controlled by JavaScript. 
+4. The last section (lower right) will display a box. The size and color of the box will controlled by JavaScript.
+ 
 
 ## Challenge 2 - CSS
 
