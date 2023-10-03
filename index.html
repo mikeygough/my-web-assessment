@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Assessment</title>
+    <title>Web Assessment - Mikey Gough</title>
     <style>
       * {
         font-family: Helvetica;
@@ -27,12 +27,11 @@
       }
 
       section {
-        height: 200px;
-        width: 200px;
         border: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0.5em;
       }
 
       input {
@@ -40,10 +39,14 @@
         padding: 0.5em;
       }
 
-      /* #div-box {
-        width: 150px;
-        height: 100px;
-      } */
+      /* animation */
+      #div-box {
+        transition: background-color 1s, width 0.3s, height 0.3s;
+      }
+
+      #upper-right input, label {
+        margin: 0.1rem;
+      }
 
     </style>
   </head>
@@ -51,15 +54,15 @@
     <div class="container">
       <section id="upper-left">
         <h1>Mikey Gough</h1>
-        <h5>FEW Assessment</h5>
+        <h5>ACS 1700 Assessment</h5>
       </section>
 
       <section id="upper-right">
-        <label for="width-input">Width</label>
-        <input id="width-input" type="number" placeholder="150px" value="150" min="10" max="180"/>
-        <label for="height-input">Height</label>
-        <input id="height-input" type="number" placeholder="150px" value="100" min="10" max="180"/>
-        <label for="color-input">Color</label>
+        <label for="width-input">Width:</label>
+        <input id="width-input" type="number" placeholder="100px" value="100" min="10" max="180"/>
+        <label for="height-input">Height:</label>
+        <input id="height-input" type="number" placeholder="100px" value="100" min="10" max="180"/>
+        <label for="color-input">Color:</label>
         <input id="color-input" type="color" />
       </section>
 
