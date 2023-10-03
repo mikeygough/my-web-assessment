@@ -56,9 +56,9 @@
 
       <section id="upper-right">
         <label for="width-input">Width</label>
-        <input id="width-input" type="number" placeholder="150px" value="150"/>
+        <input id="width-input" type="number" placeholder="150px" value="150" min="10" max="180"/>
         <label for="height-input">Height</label>
-        <input id="height-input" type="number" placeholder="150px" value="100"/>
+        <input id="height-input" type="number" placeholder="150px" value="100" min="10" max="180"/>
         <label for="color-input">Color</label>
         <input id="color-input" type="color" />
       </section>
@@ -102,9 +102,12 @@
         divBox.style.height = `${heightValue}px`;
 
         // update output text
-
+        widthOutput.innerHTML = `${widthValue}px`;
+        heightOutput.innerHTML = `${heightValue}px`;
+        colorOutput.innerHTML = colorValue;
       };
 
+      // event listeners
       document.addEventListener("DOMContentLoaded", update);
       widthInput.addEventListener("input", update);
       heightInput.addEventListener("input", update);
