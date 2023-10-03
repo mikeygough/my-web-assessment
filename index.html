@@ -7,6 +7,8 @@
     <style>
       * {
         font-family: Helvetica;
+        padding: 0;
+        margin: 0;
       }
 
       body,
@@ -37,6 +39,12 @@
         border: 1px solid black;
         padding: 0.5em;
       }
+
+      /* #div-box {
+        width: 150px;
+        height: 100px;
+      } */
+
     </style>
   </head>
   <body>
@@ -48,20 +56,20 @@
 
       <section id="upper-right">
         <label for="width-input">Width</label>
-        <input id="width-input" type="number" />
+        <input id="width-input" type="number" placeholder="150px" value="150"/>
         <label for="height-input">Height</label>
-        <input id="height-input" type="number" />
+        <input id="height-input" type="number" placeholder="150px" value="100"/>
         <label for="color-input">Color</label>
         <input id="color-input" type="color" />
       </section>
 
       <section id="lower-left">
         <h3>Width</h3>
-        <h5 id="width-output">150px</h5>
+        <h5 id="width-output"></h5>
         <h3>Height</h3>
-        <h5 id="height-output">100px</h5>
+        <h5 id="height-output"></h5>
         <h3>Color</h3>
-        <h5 id="color-output">#000000</h5>
+        <h5 id="color-output"></h5>
       </section>
 
       <section id="lower-right">
@@ -69,5 +77,39 @@
         <div id="div-box"></div>
       </section>
     </div>
+
+    <script>
+      // grab inputs
+      const widthInput = document.querySelector("#width-input");
+      const heightInput = document.querySelector("#height-input");
+      const colorInput = document.querySelector("#color-input");
+      // grab outputs
+      const widthOutput = document.querySelector("#width-output");
+      const heightOutput = document.querySelector("#height-output");
+      const colorOutput = document.querySelector("#color-output");
+      const divBox = document.querySelector("#div-box");
+
+      const update = (e) => {
+        // get values
+        const widthValue = widthInput.value;
+        const heightValue = heightInput.value;
+        const colorValue = colorInput.value;
+
+        // update div box
+        divBox.style.color = colorValue;
+        divBox.style.backgroundColor = colorValue;
+        divBox.style.width = `${widthValue}px`;
+        divBox.style.height = `${heightValue}px`;
+
+        // update output text
+
+      };
+
+      document.addEventListener("DOMContentLoaded", update);
+      widthInput.addEventListener("input", update);
+      heightInput.addEventListener("input", update);
+      colorInput.addEventListener("input", update);
+
+      </script>
   </body>
 </html>
