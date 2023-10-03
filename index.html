@@ -6,43 +6,68 @@
     <title>Web Assessment</title>
     <style>
       * {
-        font-family: Helvetica
+        font-family: Helvetica;
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+
+      .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-gap: 1rem;
+        justify-content: center;
+        align-content: center;
       }
 
       section {
         height: 200px;
         width: 200px;
         border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      input {
+        border: 1px solid black;
+        padding: 0.5em;
       }
     </style>
   </head>
   <body>
-    <section id="upper-left">
-      <h1>Mikey Gough</h1>
-      <h5>FEW Assessment</h5>
-    </section>
+    <div class="container">
+      <section id="upper-left">
+        <h1>Mikey Gough</h1>
+        <h5>FEW Assessment</h5>
+      </section>
 
-    <section id="upper-right">
-      <label for="width-input">Width</label>
-      <input id="width-input" type="number" />
-      <label for="height-input">Height</label>
-      <input id="height-input" type="number" />
-      <label for="color-input">Color</label>
-      <input id="color-input" type="color" />
-    </section>
+      <section id="upper-right">
+        <label for="width-input">Width</label>
+        <input id="width-input" type="number" />
+        <label for="height-input">Height</label>
+        <input id="height-input" type="number" />
+        <label for="color-input">Color</label>
+        <input id="color-input" type="color" />
+      </section>
 
-    <section id="lower-left">
-      <h3>Width</h3>
-      <h5 id="width-output">150px</h5>
-      <h3>Height</h3>
-      <h5 id="height-output">100px</h5>
-      <h3>Color</h3>
-      <h5 id="color-output">#000000</h5>
-    </section>
+      <section id="lower-left">
+        <h3>Width</h3>
+        <h5 id="width-output">150px</h5>
+        <h3>Height</h3>
+        <h5 id="height-output">100px</h5>
+        <h3>Color</h3>
+        <h5 id="color-output">#000000</h5>
+      </section>
 
-    <section id="lower-right">
-      <h1>Color</h1>
-      <div id="div-box"></div>
-    </section>
+      <section id="lower-right">
+        <h1>Color</h1>
+        <div id="div-box"></div>
+      </section>
+    </div>
   </body>
 </html>
